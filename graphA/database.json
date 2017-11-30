@@ -1,0 +1,10 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": "admin",
+    "password": "admin",
+    "host": "localhost",
+    "database": "graphA",
+    "schema": "public"
+  }
+}

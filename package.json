@@ -1,0 +1,15 @@
+{
+  "name": "graphdb",
+  "version": "0.0.1",
+  "description": "db graph postre neo4j",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zz1312",
+  "license": "MIT",
+  "dependencies": {
+    "db-migrate-pg": "^0.2.5",
+    "mock-data": "^1.5.4"
+  }
+}
