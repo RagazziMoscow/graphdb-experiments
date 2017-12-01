@@ -9,7 +9,11 @@
   "author": "zz1312",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.6.0",
+    "chalk": "^2.3.0",
     "db-migrate-pg": "^0.2.5",
-    "mock-data": "^1.5.4"
+    "mock-data": "^1.5.4",
+    "pg": "^7.4.0",
+    "pg-promise": "^7.3.2"
   }
 }
