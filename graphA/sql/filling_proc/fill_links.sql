@@ -1,8 +1,9 @@
-﻿CREATE OR REPLACE FUNCTION fill_links(records_count integer) RETURNS TABLE VOID AS
+﻿CREATE OR REPLACE FUNCTION fill_links(records_count integer) RETURNS VOID AS
 $BODY$
 DECLARE
   obj1_value int;
   obj2_value int;
+  type int;
   data_type character varying;
 BEGIN
 FOR i in 1..records_count LOOP

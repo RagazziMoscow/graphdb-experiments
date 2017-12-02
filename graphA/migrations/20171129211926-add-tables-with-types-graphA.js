@@ -121,7 +121,7 @@ exports.up = function(db) {
           }
         },
         value: {
-          type: 'int',
+          type: 'bytea',
           notNull: true,
         }
       });
