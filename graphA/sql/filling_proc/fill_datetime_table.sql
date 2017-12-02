@@ -7,7 +7,7 @@ DECLARE
   date_value timestamp without time zone;
 BEGIN
   FOR link_record IN SELECT t.link_id, t.type FROM "nir-link" t LOOP
-    IF link_record.type = 'datatime' THEN
+    IF link_record.type = 'datetime' THEN
       date_value := random_datetime(start_date, end_date);
       INSERT INTO "date-time" (link_id, value) VALUES (link_record.link_id, date_value);
     END IF;
