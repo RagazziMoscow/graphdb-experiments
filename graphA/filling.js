@@ -27,7 +27,7 @@ var objectsTaksk = {
   clearTable: (done) => {
     client.query('DELETE from \"nir-object\"', (err) => {
       if (err) done(err);
-      console.log(chalk.green(('Objects...Cleared...OK'));
+      console.log(chalk.green('Objects...Cleared...OK'));
       done(null);
     });
   },
