@@ -3,12 +3,13 @@ $BODY$
 DECLARE
   link_record RECORD;
 BEGIN
-  FOR link_record IN SELECT link.link_id, object_table.name AS obj_name,
-			    object_table.name AS attr_name,
+  FOR link_record IN SELECT link.link_id, object_table1.name AS obj_name,
+			    object_table2.name AS attr_name,
 			    link.int, link.string, link.real,
 			    link.binary, link.datetime
 		     FROM "nir-link" link
-		     JOIN "nir-object" object_table ON link.obj1 = object_table.id
+		     JOIN "nir-object" object_table1 ON link.obj1 = object_table1.id
+		     JOIN "nir-object" object_table2 ON link.obj2 = object_table2.id
 		     LOOP
       obj := link_record.obj_name;
       attr := link_record.attr_name;
